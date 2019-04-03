@@ -1,0 +1,15 @@
+.btn {
+  width: 24px;
+}
+
+.mic {
+  color: #929292;
+}
+
+.stop {
+  color: red;
+}
+
+.send-audio {
+  color: green;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Sidebar from './Sidebar';
 import Chat from './Chat';
-import './app.css';
+import './App.css';
 import { Provider } from 'react-redux';
 import store from './store';
 
