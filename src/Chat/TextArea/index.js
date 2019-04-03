@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SendIcon from "../../assets/icons/send.svg";
 
 import "./textArea.css";
