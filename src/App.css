@@ -1,33 +1,214 @@
-.App {
-  text-align: center;
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #efefef;
+    font-family: 'Arial', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+button {
+    border: 0;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.container {
+    width: 1200px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.3);
+    overflow: hidden;
+    
+}
+.sidebar {
+    width: 30%;
+    overflow-y: scroll;
+    background-color: #fff;
+    position: relative;
+    border-right: 1px solid #bbb;
+}
+.chat {
+    width: 70%;
+    background-color: #efe7dd;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-search {
+    height: 40px;
+    display: flex;
+    padding: 10px 15px;
+}
+.box-search-filed {
+    width: 100%;
+    box-shadow: 0;
+    outline: none;
+    border: 0;
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.foto-header {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.box-contact {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.box-contact:hover {
+    background-color: #efefef;
+}
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.name-contact {
+    font-size: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.status-contact {
+    font-size: 13px;
+    text-align: left;
+}
+
+.foto-contact {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    background-color: #fff;
+    transition: left .2s ease-in-out;
+}
+.profile.active {
+    left: 0;
+}
+.profile-header {
+    width: 100%;
+    height: 100px;
+    padding: 20px 15px;
+    background-color: #25b17c;
+    display: flex;
+    align-items: flex-end;
+}
+.profile-headline {
+    font-size: 25px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.profile-photo {
+    width: 180px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 50px 0;
+}
+
+.profile-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.profile-form {
+    display: flex;
+    justify-content: space-between;
+}
+.label {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: green;
+}
+.form-control {
+    width: 100%;
+    border: 0;
+    padding: 15px 0;
+    font-size: 20px;
+    box-shadow:none;
+    outline: none;
+    display: none;
+}
+.form-control.active {
+    display: block;
+}
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.box-textarea {
+    width: 100%;
+    height: 80px;
+    background-color: #efefef;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.form-control-area {
+    outline: none;
+    width: 100%;
+    border-radius: 30px;
+    border: 0;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.messanges {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.message {
+    background-color: #c0f29d;
+    font-size: 15px;
+    margin-left: auto;
+    display: inline-block;
+    padding: 10px;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+.message.contact {
+    background-color: #fff;
+    margin-right: auto;
+    margin-left: 0;
 }
